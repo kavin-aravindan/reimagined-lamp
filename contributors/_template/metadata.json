@@ -1,0 +1,7 @@
+{
+  "author": "Jane Doe",
+  "title": "Interactive Particle Field",
+  "description": "An interactive WebGL-based particle field that reacts to mouse movements and clicks.",
+  "tags": ["Creative Coding", "WebGL", "Interactive"],
+  "github": "janedoe"
+}

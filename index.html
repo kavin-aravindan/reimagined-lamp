@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Co-Lab: Contributor Showcase Portal</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="A modern showcase dashboard highlighting unique custom HTML, CSS, and JS landing pages created by individual collaborative contributors.">
+  <meta name="keywords" content="frontend showcase, multi-page collaborative website, html5, css3, vanilla javascript, developer portfolio">
+  <meta name="author" content="Co-Lab Team">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Co-Lab Showcase Hub">
+  <meta property="og:description" content="Explore custom landing pages and creative widgets built by developers in our open-source collaboration project.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+  <!-- Glowing Background Orbs -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <div class="app-container">
+    <!-- Header Section -->
+    <header class="main-header">
+      <div class="logo-area">
+        <div class="logo-icon">
+          <i data-lucide="layers"></i>
+        </div>
+        <div class="logo-text">
+          <h1>Co-Lab</h1>
+          <span>Showcase Hub</span>
+        </div>
+      </div>
+
+      <!-- Quick Statistics Panels -->
+      <div class="stats-row">
+        <div class="stat-card" id="stat-pages">
+          <div class="stat-icon"><i data-lucide="folder-code"></i></div>
+          <div class="stat-info">
+            <span class="stat-value">0</span>
+            <span class="stat-label">Pages</span>
+          </div>
+        </div>
+        <div class="stat-card" id="stat-contributors">
+          <div class="stat-icon"><i data-lucide="users"></i></div>
+          <div class="stat-info">
+            <span class="stat-value">0</span>
+            <span class="stat-label">Authors</span>
+          </div>
+        </div>
+        <div class="stat-card" id="stat-tags">
+          <div class="stat-icon"><i data-lucide="tag"></i></div>
+          <div class="stat-info">
+            <span class="stat-value">0</span>
+            <span class="stat-label">Unique Tags</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Theme Switcher & Actions -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="action-btn" aria-label="Toggle dark/light theme">
+          <i data-lucide="sun" class="sun-icon"></i>
+          <i data-lucide="moon" class="moon-icon"></i>
+        </button>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="cta-github" id="github-repo-link">
+          <i data-lucide="github"></i>
+          <span>Repository</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="dashboard-content">
+      
+      <!-- Hero Banner -->
+      <section class="hero-section">
+        <h2>A Shared Space for Frontend Experiments</h2>
+        <p>Browse through unique interactive landing pages, widgets, and creative coding visualizer cards created by our developers. Each page lives in its own subdirectory with custom styles and scripts.</p>
+        <a href="#contributions-grid" class="scroll-down-btn" aria-label="Scroll to projects">
+          <span>Explore Subpages</span>
+          <i data-lucide="chevron-down"></i>
+        </a>
+      </section>
+
+      <!-- Dashboard Controls -->
+      <section class="dashboard-controls">
+        <div class="search-bar-wrapper">
+          <i data-lucide="search" class="search-icon"></i>
+          <input type="text" id="search-input" placeholder="Search by project title, developer, or keyword..." aria-label="Search pages">
+          <button id="clear-search" class="clear-btn" aria-label="Clear search">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+
+        <div class="tags-filter-container">
+          <span class="filter-label"><i data-lucide="filter"></i> Filter by Tag:</span>
+          <div class="tags-row" id="tags-pills-container">
+            <button class="tag-pill active" data-tag="all">All Projects</button>
+            <!-- Dynamic tags will be injected here -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Contributor Grid Showcase -->
+      <section class="grid-section">
+        <div class="grid-header">
+          <h3 id="grid-title">All Contributions</h3>
+          <span class="results-count" id="results-count">Showing 0 of 0 projects</span>
+        </div>
+
+        <!-- Dynamic Cards Grid -->
+        <div class="showcase-grid" id="contributions-grid">
+          <!-- Loading State Placeholder -->
+          <div class="loading-state" id="loading-placeholder">
+            <div class="spinner"></div>
+            <p>Scanning files and directories...</p>
+          </div>
+        </div>
+
+        <!-- No Results Fallback -->
+        <div class="no-results-state hidden" id="no-results-placeholder">
+          <i data-lucide="folder-search"></i>
+          <h4>No pages matched your search</h4>
+          <p>Try checking your spelling, selecting another tag, or clear the search filters.</p>
+          <button class="reset-btn" id="reset-filters-btn">Reset Filters</button>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+      <div class="footer-content">
+        <p>&copy; 2026 <strong>Co-Lab Collaborative Showcase</strong>. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#how-to-contribute" class="footer-link-trigger" id="contribute-rules-link">How to Contribute</a>
+          <span class="bullet">&bull;</span>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- How to Contribute Modal (Overlay) -->
+  <div class="modal-overlay hidden" id="contribute-modal">
+    <div class="modal-card">
+      <header class="modal-header">
+        <h3><i data-lucide="git-pull-request"></i> Contributor Guidelines</h3>
+        <button class="modal-close-btn" id="close-modal-btn" aria-label="Close modal">
+          <i data-lucide="x"></i>
+        </button>
+      </header>
+      <div class="modal-body">
+        <p>Adding your own custom sub-page is fast and easy. Follow these steps:</p>
+        <ol class="guide-steps">
+          <li>
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <strong>Clone the repo:</strong> Clone this codebase locally and navigate to the project root.
+            </div>
+          </li>
+          <li>
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <strong>Create a folder:</strong> Duplicate the template folder <code>contributors/_template/</code> and rename it to your preferred namespace (e.g. <code>contributors/your-name/</code>).
+            </div>
+          </li>
+          <li>
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <strong>Customize content:</strong> Edit your <code>index.html</code>, <code>style.css</code>, and <code>script.js</code> files inside your new folder. Add all assets locally.
+            </div>
+          </li>
+          <li>
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <strong>Fill out Metadata:</strong> Open your folder's <code>metadata.json</code> and set your author name, project title, tags, description, and GitHub user.
+            </div>
+          </li>
+          <li>
+            <div class="step-num">5</div>
+            <div class="step-content">
+              <strong>Commit and Push:</strong> Commit your directory. On push, GitHub Actions will automatically scan your files, compile the list, and deploy the updated showcase to the web!
+            </div>
+          </li>
+        </ol>
+        <div class="modal-note">
+          <i data-lucide="info"></i>
+          <span>To preview your submission locally before pushing, run <code>node build.js</code> in your terminal to compile the index, then open the landing page.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
