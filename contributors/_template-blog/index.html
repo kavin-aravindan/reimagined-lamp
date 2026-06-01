@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Unlocking the Power of CSS Grid and Flexbox - Blog Template</title>
-  
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- Reading Progress Bar -->
   <div id="progress-bar-container">
@@ -38,7 +42,7 @@
     <!-- Main Article -->
     <main>
       <article class="post">
-        
+
         <!-- Post Header -->
         <header class="post-header">
           <div class="post-meta-top">
@@ -46,10 +50,11 @@
             <span class="divider">&bull;</span>
             <span class="read-time"><i data-lucide="clock"></i> 4 min read</span>
           </div>
-          
+
           <h1 class="post-title">Unlocking the Power of CSS Grid and Flexbox</h1>
-          <p class="post-subtitle">How to choose the right layout tool for modern, responsive, and maintainable user interfaces.</p>
-          
+          <p class="post-subtitle">How to choose the right layout tool for modern, responsive, and maintainable user
+            interfaces.</p>
+
           <!-- Author Info -->
           <div class="author-card">
             <div class="avatar">JD</div>
@@ -69,30 +74,39 @@
         <!-- Post Body Content -->
         <div class="post-body">
           <p class="lead">
-            Layout design in CSS has evolved dramatically. Gone are the days of float hacks and table layout grids. Today, CSS Grid and Flexbox stand as the dual pillars of modern responsive design, yet choosing which one to use remains a common stumbling block.
+            Layout design in CSS has evolved dramatically. Gone are the days of float hacks and table layout grids.
+            Today, CSS Grid and Flexbox stand as the dual pillars of modern responsive design, yet choosing which one to
+            use remains a common stumbling block.
           </p>
 
           <p>
-            The easiest way to differentiate them is by dimension. **Flexbox** is designed for one-dimensional layouts — either a row *or* a column. **CSS Grid**, on the other hand, is built for two-dimensional layouts — rows *and* columns simultaneously.
+            The easiest way to differentiate them is by dimension. **Flexbox** is designed for one-dimensional layouts —
+            either a row *or* a column. **CSS Grid**, on the other hand, is built for two-dimensional layouts — rows
+            *and* columns simultaneously.
           </p>
 
           <h2>When to Reach for Flexbox</h2>
           <p>
-            Flexbox is content-out. This means you let the sizes of the elements determine where they sit. It is perfect for components where the structural flow is linear:
+            Flexbox is content-out. This means you let the sizes of the elements determine where they sit. It is perfect
+            for components where the structural flow is linear:
           </p>
           <ul>
-            <li><strong>Navigation Bars:</strong> Flexbox makes it simple to align logos on the left and menu links on the right.</li>
+            <li><strong>Navigation Bars:</strong> Flexbox makes it simple to align logos on the left and menu links on
+              the right.</li>
             <li><strong>Form Controls:</strong> Aligning an input field and a submit button next to each other.</li>
-            <li><strong>Card Contents:</strong> Vertically stacking a card image, title, and description while keeping the CTA button pinned to the bottom.</li>
+            <li><strong>Card Contents:</strong> Vertically stacking a card image, title, and description while keeping
+              the CTA button pinned to the bottom.</li>
           </ul>
 
           <blockquote>
-            "Use Flexbox when you care about the alignment of individual elements along a single axis. Use Grid when you want to establish an overarching template."
+            "Use Flexbox when you care about the alignment of individual elements along a single axis. Use Grid when you
+            want to establish an overarching template."
           </blockquote>
 
           <h2>When to Reach for CSS Grid</h2>
           <p>
-            Grid is layout-in. You define a structural grid container first, and then slot child items directly into specific cells. This makes Grid incredibly powerful for page-level layouts or complex dashboards:
+            Grid is layout-in. You define a structural grid container first, and then slot child items directly into
+            specific cells. This makes Grid incredibly powerful for page-level layouts or complex dashboards:
           </p>
           <pre><code>.grid-container {
   display: grid;
@@ -100,12 +114,15 @@
   gap: 20px;
 }</code></pre>
           <p>
-            Grid excels at keeping grid items locked into alignment along both axes, even when content size differs drastically. It is perfect for card galleries, layout columns, and masonry structures.
+            Grid excels at keeping grid items locked into alignment along both axes, even when content size differs
+            drastically. It is perfect for card galleries, layout columns, and masonry structures.
           </p>
 
           <h2>Conclusion</h2>
           <p>
-            Rather than treating them as competitors, think of Grid and Flexbox as complementary partners. You will often design a main page container with **CSS Grid** and align the content elements inside each grid child using **Flexbox**.
+            Rather than treating them as competitors, think of Grid and Flexbox as complementary partners. You will
+            often design a main page container with **CSS Grid** and align the content elements inside each grid child
+            using **Flexbox**.
           </p>
         </div>
 
@@ -115,15 +132,15 @@
             <button id="like-btn" class="like-button" aria-label="Like post">
               <i data-lucide="heart" class="heart-icon"></i>
               <span>Like</span>
-              <span id="like-count" class="count">42</span>
+              <span id="like-count" class="count">0</span>
             </button>
-            
+
             <button id="share-btn" class="share-button" aria-label="Share post">
               <i data-lucide="share-2"></i>
               <span>Share</span>
             </button>
           </div>
-          
+
           <div class="author-github-connect">
             <a href="https://github.com/janedoe" target="_blank" rel="noopener noreferrer" class="github-btn">
               <i data-lucide="github"></i>
@@ -144,4 +161,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>

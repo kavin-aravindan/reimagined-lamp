@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Creating Markdown Parsers in Node.js - Co-Lab Blog</title>
-  
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-  
+
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <!-- Reading Progress Bar -->
   <div id="progress-bar-container">
@@ -38,7 +42,7 @@
     <!-- Main Article -->
     <main>
       <article class="post">
-        
+
         <!-- Post Header -->
         <header class="post-header">
           <div class="post-meta-top">
@@ -46,10 +50,11 @@
             <span class="divider">&bull;</span>
             <span class="read-time"><i data-lucide="clock"></i> 1 min read</span>
           </div>
-          
+
           <h1 class="post-title">Creating Markdown Parsers in Node.js</h1>
-          <p class="post-subtitle">A look at how to build a regex-based lightweight markdown compiler in vanilla JavaScript.</p>
-          
+          <p class="post-subtitle">A look at how to build a regex-based lightweight markdown compiler in vanilla
+            JavaScript.</p>
+
           <!-- Author Info -->
           <div class="author-card">
             <div class="avatar">HS</div>
@@ -68,32 +73,41 @@
 
         <!-- Post Body Content -->
         <div class="post-body">
-<h1>Creating Markdown Parsers in Node.js</h1>
+          <h1>Creating Markdown Parsers in Node.js</h1>
 
-<p>Building a custom markdown compiler in vanilla Node.js is a rewarding exercise in regex parsing and text manipulation. While production sites should use robust libraries like <code>marked</code> or <code>markdown-it</code>, a simple custom builder can be coded with zero dependencies.</p>
+          <p>Building a custom markdown compiler in vanilla Node.js is a rewarding exercise in regex parsing and text
+            manipulation. While production sites should use robust libraries like <code>marked</code> or
+            <code>markdown-it</code>, a simple custom builder can be coded with zero dependencies.</p>
 
-<h2>The Strategy</h2>
+          <h2>The Strategy</h2>
 
-<p>Our parsing pipeline follows these distinct steps:
-<ul>
-<li><strong>Protect Block Structures:</strong> Isolate code blocks and other raw HTML from inline regex modifications.</li>
-<li><strong>Convert Block Elements:</strong> Use regex patterns to identify blockquotes, headings, lists, and paragraphs.</li>
-<li><strong>Convert Inline Formatting:</strong> Apply inline stylings like bold, italics, and inline code markers.</li>
-<li><strong>Reassemble:</strong> Inject protected block elements back into the final HTML output.</li>
-</ul></p>
+          <p>Our parsing pipeline follows these distinct steps:
+          <ul>
+            <li><strong>Protect Block Structures:</strong> Isolate code blocks and other raw HTML from inline regex
+              modifications.</li>
+            <li><strong>Convert Block Elements:</strong> Use regex patterns to identify blockquotes, headings, lists,
+              and paragraphs.</li>
+            <li><strong>Convert Inline Formatting:</strong> Apply inline stylings like bold, italics, and inline code
+              markers.</li>
+            <li><strong>Reassemble:</strong> Inject protected block elements back into the final HTML output.</li>
+          </ul>
+          </p>
 
-<h2>Sample Parsing Rules</h2>
+          <h2>Sample Parsing Rules</h2>
 
-<p>Here is a look at a regex conversion block for headers:</p>
+          <p>Here is a look at a regex conversion block for headers:</p>
 
-<p><pre><code class="language-javascript">// Matches '## Subheading' and outputs '&lt;h2&gt;Subheading&lt;/h2&gt;'
+          <p>
+          <pre><code class="language-javascript">// Matches '## Subheading' and outputs '&lt;h2&gt;Subheading&lt;/h2&gt;'
 html = html.replace(/^## (.*?)$/gm, '&lt;h2&gt;$1&lt;/h2&gt;');
-</code></pre></p>
+</code></pre>
+          </p>
 
-<blockquote>"Regex is powerful, but protect your code blocks first! Otherwise, formatting inside code blocks (like asterisks or backticks) will get mangled by the global inline parsing rules."</blockquote>
+          <blockquote>"Regex is powerful, but protect your code blocks first! Otherwise, formatting inside code blocks
+            (like asterisks or backticks) will get mangled by the global inline parsing rules."</blockquote>
 
-<p>With this setup, you can compile clean articles dynamically on the fly!</p>
-</div>
+          <p>With this setup, you can compile clean articles dynamically on the fly!</p>
+        </div>
 
         <!-- Post Footer Actions (Interactive) -->
         <footer class="post-footer">
@@ -101,15 +115,15 @@ html = html.replace(/^## (.*?)$/gm, '&lt;h2&gt;$1&lt;/h2&gt;');
             <button id="like-btn" class="like-button" aria-label="Like post">
               <i data-lucide="heart" class="heart-icon"></i>
               <span>Like</span>
-              <span id="like-count" class="count">42</span>
+              <span id="like-count" class="count">0</span>
             </button>
-            
+
             <button id="share-btn" class="share-button" aria-label="Share post">
               <i data-lucide="share-2"></i>
               <span>Share</span>
             </button>
           </div>
-          
+
           <div class="author-github-connect">
             <a href="https://github.com/hshankar08" class="github-btn">
               <i data-lucide="github"></i>
@@ -130,4 +144,5 @@ html = html.replace(/^## (.*?)$/gm, '&lt;h2&gt;$1&lt;/h2&gt;');
 
   <script src="script.js"></script>
 </body>
+
 </html>
