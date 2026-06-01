@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crippled Woman - Co-Lab Blog</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Reading Progress Bar -->
+  <div id="progress-bar-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <div class="blog-wrapper">
+    <!-- Header Navigation -->
+    <header class="blog-header">
+      <a href="../../index.html" class="back-link">
+        <i data-lucide="arrow-left"></i>
+        <span>Back to Hub</span>
+      </a>
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+        <i data-lucide="sun" class="sun-icon"></i>
+        <i data-lucide="moon" class="moon-icon"></i>
+      </button>
+    </header>
+
+    <!-- Main Article -->
+    <main>
+      <article class="post">
+
+        <!-- Post Header -->
+        <header class="post-header">
+          <div class="post-meta-top">
+            <span class="category-tag">CSS Design</span>
+            <span class="divider">&bull;</span>
+            <span class="read-time"><i data-lucide="clock"></i> 1 min read</span>
+          </div>
+
+          <h1 class="post-title">Crippled Woman</h1>
+
+          <!-- Author Info -->
+          <div class="author-card">
+            <div class="avatar">HP</div>
+            <div class="author-details">
+              <span class="author-name">Harshvardhan Pandey</span>
+              <span class="publish-date">Published June 1, 2026</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- Post Cover/Hero Visual -->
+        <div class="post-cover">
+          <div class="cover-pattern"></div>
+          <div class="cover-text">CRIPPLED WOMAN...</div>
+        </div>
+
+        <!-- Post Body Content -->
+        <div class="post-body">
+<p>Happy Birthday Old Woman! How are the joints now? Are the knees getting worse because of the old age?</p>
+
+<p>Just a random memory I was thinking about the other day. When you, me and Meet were roaming in THub and Himalaya in first year. Crazy that you have the j-word now. It has been an incredible time with you for the last 4-ish years. I hope your experience in Gurgaon is positive (like covariance matrices).</p>
+
+<p>This is getting too sweet. FUCK YOU! STOP FUCKING MEWING ALL THE TIME!</p>
+
+<p>PS: I think you should finally cook pasta with Sujal.</p>
+
+<p>PPS: You may be buff but you're not a buffer.</p>
+</div>
+
+        <!-- Post Footer Actions (Interactive) -->
+        <footer class="post-footer">
+          <div class="interactive-panel">
+            <button id="like-btn" class="like-button" aria-label="Like post">
+              <i data-lucide="heart" class="heart-icon"></i>
+              <span>Like</span>
+              <span id="like-count" class="count">0</span>
+            </button>
+
+            <button id="share-btn" class="share-button" aria-label="Share post">
+              <i data-lucide="share-2"></i>
+              <span>Share</span>
+            </button>
+          </div>
+
+          <div class="author-github-connect">
+            <a href="https://github.com/harshvardhan-pandey" class="github-btn">
+              <i data-lucide="github"></i>
+              <span>Follow @harshvardhan-pandey</span>
+            </a>
+          </div>
+        </footer>
+
+      </article>
+    </main>
+  </div>
+
+  <!-- Share Toast Alert -->
+  <div id="toast" class="toast hidden">
+    <i data-lucide="check-circle"></i>
+    <span>Link copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
