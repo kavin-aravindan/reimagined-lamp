@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mog Everyday - Co-Lab Blog</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Reading Progress Bar -->
+  <div id="progress-bar-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <div class="blog-wrapper">
+    <!-- Header Navigation -->
+    <header class="blog-header">
+      <a href="../../index.html" class="back-link">
+        <i data-lucide="arrow-left"></i>
+        <span>Back to Hub</span>
+      </a>
+      <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+        <i data-lucide="sun" class="sun-icon"></i>
+        <i data-lucide="moon" class="moon-icon"></i>
+      </button>
+    </header>
+
+    <!-- Main Article -->
+    <main>
+      <article class="post">
+
+        <!-- Post Header -->
+        <header class="post-header">
+          <div class="post-meta-top">
+            <span class="category-tag">Image Blog</span>
+            <span class="divider">&bull;</span>
+            <span class="read-time"><i data-lucide="clock"></i> 1 min read</span>
+          </div>
+
+          <h1 class="post-title">Mog Everyday</h1>
+
+          <!-- Author Info -->
+          <div class="author-card">
+            <div class="avatar">KA</div>
+            <div class="author-details">
+              <span class="author-name">Kavin Aravindan</span>
+              <span class="publish-date">Published June 1, 2026</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- Post Body Content -->
+        <div class="post-body">
+          <figure class="photo-frame" data-placeholder="Add images/image_jumpscare.jpeg">
+            <img src="images/image_jumpscare.jpeg" alt="Jumpscare" loading="lazy" data-optional-image>
+            <figcaption>jumpscare</figcaption>
+          </figure>
+
+          <p>
+            You are now 22. Old Woman.
+
+            Eat food now. NOM NOM. (why tf can i not find a picture of you with boba???)
+          </p>
+
+          <div class="photo-grid photo-grid-foods">
+            <figure class="photo-frame" data-placeholder="Add images/image_food1.jpeg">
+              <img src="images/image_food1.jpeg" alt="Food 1" loading="lazy" data-optional-image>
+              <figcaption>kimchi jigae (back in the day when you weren't so old)</figcaption>
+            </figure>
+
+            <figure class="photo-frame" data-placeholder="Add images/image_food2.jpeg">
+              <img src="images/image_food2.jpeg" alt="Food 2" loading="lazy" data-optional-image>
+              <figcaption>Bro came to work at third wave and ate a cinnamon roll instead (bruh)</figcaption>
+            </figure>
+
+            <figure class="photo-frame" data-placeholder="Add images/image_food3.jpeg">
+              <img src="images/image_food3.jpeg" alt="Food 3" loading="lazy" data-optional-image>
+              <figcaption>Polar bear</figcaption>
+            </figure>
+
+            <figure class="photo-frame" data-placeholder="Add images/image_food4.jpeg">
+              <img src="images/image_food4.jpeg" alt="Food 4" loading="lazy" data-optional-image>
+              <figcaption>Your first born</figcaption>
+            </figure>
+
+            <figure class="photo-frame" data-placeholder="Add images/image_food5.jpeg">
+              <img src="images/image_food5.jpeg" alt="Food 5" loading="lazy" data-optional-image>
+              <figcaption>Magnolia sugar rush</figcaption>
+            </figure>
+
+            <figure class="photo-frame" data-placeholder="Add images/image_food6.jpeg">
+              <img src="images/image_food6.jpeg" alt="Food 6" loading="lazy" data-optional-image>
+              <figcaption>Last joyful bite of food before you barfed at towlichowki</figcaption>
+            </figure>
+          </div>
+
+          <p>
+            Some goofy.
+          </p>
+
+          <div class="photo-grid">
+            <figure class="photo-frame" data-placeholder="Add images/image_voluntary_kidnap.jpeg">
+              <img src="images/image_voluntary_kidnap.jpeg" alt="Voluntary kidnap" loading="lazy" data-optional-image>
+              <figcaption>kidnapping volunteer</figcaption>
+            </figure>
+
+            <figure class="photo-frame" data-placeholder="Add images/Image_hospital.jpeg">
+              <img src="images/Image_hospital.jpeg" alt="Hospital" loading="lazy" data-optional-image>
+              <figcaption>One knee gone wasn't enough apparently smh my head</figcaption>
+            </figure>
+          </div>
+
+          <p>
+            MOG.
+          </p>
+
+          <div class="photo-grid photo-grid-mogs">
+            <figure class="photo-frame" data-placeholder="Add images/image_mog1.jpeg">
+              <img src="images/image_mog1.jpeg" alt="Mog 1" loading="lazy" data-optional-image>
+              <figcaption>Renao mog</figcaption>
+            </figure>
+
+            <figure class="photo-frame" data-placeholder="Add images/image_mog2.jpeg">
+              <img src="images/image_mog2.jpeg" alt="Mog 2" loading="lazy" data-optional-image>
+              <figcaption>CSG mog</figcaption>
+            </figure>
+
+            <figure class="photo-frame" data-placeholder="Add images/image_mog3.jpeg">
+              <img src="images/image_mog3.jpeg" alt="Mog 3" loading="lazy" data-optional-image>
+              <figcaption>farewell mog :&#40;</figcaption>
+            </figure>
+          </div>
+
+          <p>
+            BOBA WHEN.
+          </p>
+        </div>
+
+        <!-- Post Footer Actions (Interactive) -->
+        <footer class="post-footer">
+          <div class="interactive-panel">
+            <button id="like-btn" class="like-button" aria-label="Like post">
+              <i data-lucide="heart" class="heart-icon"></i>
+              <span>Like</span>
+              <span id="like-count" class="count">0</span>
+            </button>
+
+            <button id="share-btn" class="share-button" aria-label="Share post">
+              <i data-lucide="share-2"></i>
+              <span>Share</span>
+            </button>
+          </div>
+
+          <div class="author-github-connect">
+            <a href="https://github.com/kavin-aravindan" target="_blank" rel="noopener noreferrer" class="github-btn">
+              <i data-lucide="github"></i>
+              <span>Follow @kavin-aravindan</span>
+            </a>
+          </div>
+        </footer>
+
+      </article>
+    </main>
+  </div>
+
+  <!-- Share Toast Alert -->
+  <div id="toast" class="toast hidden">
+    <i data-lucide="check-circle"></i>
+    <span>Link copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
