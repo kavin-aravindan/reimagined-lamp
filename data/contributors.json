@@ -1,38 +1,13 @@
 {
-  "updatedAt": "2026-06-01T16:21:39.877Z",
-  "totalCount": 6,
+  "updatedAt": "2026-06-01T16:43:39.859Z",
+  "totalCount": 3,
   "tags": [
-    "Aesthetics",
     "Blog",
-    "Canvas",
-    "Clock",
-    "Compilers",
-    "Creative Coding",
+    "Fanfiction",
     "Images",
-    "Interactive",
-    "JavaScript",
-    "Markdown",
-    "Neon",
-    "Node.js",
-    "Widget",
     "spcrc-wannabe"
   ],
   "submissions": [
-    {
-      "folderName": "creating-markdown-parsers-in-nodejs",
-      "path": "contributors/creating-markdown-parsers-in-nodejs/index.html",
-      "hasIndex": true,
-      "author": "Hari Shankar",
-      "title": "Creating Markdown Parsers in Node.js",
-      "description": "A look at how to build a regex-based lightweight markdown compiler in vanilla JavaScript.",
-      "tags": [
-        "Node.js",
-        "Markdown",
-        "JavaScript",
-        "Compilers"
-      ],
-      "github": "hshankar08"
-    },
     {
       "folderName": "harshvardhan-pandey",
       "path": "contributors/harshvardhan-pandey/index.html",
@@ -46,45 +21,16 @@
       "github": "harshvardhan-pandey"
     },
     {
-      "folderName": "alex-rivera",
-      "path": "contributors/alex-rivera/index.html",
-      "hasIndex": true,
-      "author": "Alex Rivera",
-      "title": "Cyberpunk Neon Clock",
-      "description": "A dark themed digital clock with glowing neon aesthetics and interactive visual effects.",
-      "tags": [
-        "Clock",
-        "Neon",
-        "Widget",
-        "Aesthetics"
-      ],
-      "github": "alexrivera"
-    },
-    {
-      "folderName": "hshankar08",
-      "path": "contributors/hshankar08/index.html",
+      "folderName": "harishankar08",
+      "path": "contributors/harishankar08/index.html",
       "hasIndex": true,
       "author": "Hari Shankar",
       "title": "Doki Doki Waku Waku 3000",
       "description": "Shut up. Baka.",
       "tags": [
-        "Interactive"
+        "Fanfiction"
       ],
-      "github": "hshankar08"
-    },
-    {
-      "folderName": "jane-doe",
-      "path": "contributors/jane-doe/index.html",
-      "hasIndex": true,
-      "author": "Jane Doe",
-      "title": "Interactive Particle Field",
-      "description": "An interactive WebGL-like canvas particle field that reacts to mouse hover and click explosions.",
-      "tags": [
-        "Canvas",
-        "Interactive",
-        "Creative Coding"
-      ],
-      "github": "janedoe"
+      "github": "HariShankar08"
     },
     {
       "folderName": "kavin-aravindan",

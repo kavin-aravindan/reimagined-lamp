@@ -1,7 +1,0 @@
-{
-  "author": "Jane Doe",
-  "title": "Interactive Particle Field",
-  "description": "An interactive WebGL-like canvas particle field that reacts to mouse hover and click explosions.",
-  "tags": ["Canvas", "Interactive", "Creative Coding"],
-  "github": "janedoe"
-}

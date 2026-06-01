@@ -1,0 +1,211 @@
+/* ==========================================================================
+   AO3 Stylesheet Custom Refinements & Interactivity Overrides
+   ========================================================================== */
+
+/* Layout and Base Adjustments */
+body {
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, Helvetica, sans-serif, 'GNU Unifont';
+  background-color: #fff;
+  color: #2a2a2a;
+  line-height: 1.5;
+}
+
+/* Header & Primary Menu styling polish */
+#header .primary {
+  background: #990000;
+  box-shadow: inset 0 -6px 10px rgba(0, 0, 0, 0.15), 
+              1px 1px 3px -1px rgba(0, 0, 0, 0.25), 
+              inset 0 -1px 0 rgba(0, 0, 0, 0.8);
+}
+
+#header .heading a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+#header .logo {
+  height: 36px;
+  width: auto;
+  vertical-align: middle;
+}
+
+/* Terms of Service (TOS) Banner Prompt Styling */
+#tos_prompt {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  box-sizing: border-box;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+  backdrop-filter: blur(2px);
+}
+
+#tos_prompt h2.heading {
+  background: #990000;
+  color: #fff;
+  width: 100%;
+  max-width: 650px;
+  margin: 0;
+  padding: 12px 18px;
+  font-size: 1.25em;
+  font-weight: bold;
+  border-radius: 6px 6px 0 0;
+  font-family: Georgia, serif;
+  box-sizing: border-box;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #730000;
+}
+
+#tos_prompt .agreement {
+  background: #fdfdfd;
+  color: #333;
+  width: 100%;
+  max-width: 650px;
+  max-height: 80vh;
+  overflow-y: auto;
+  padding: 24px;
+  box-sizing: border-box;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  font-size: 0.95em;
+}
+
+#tos_prompt .agreement p {
+  margin: 0 0 1.2em;
+  line-height: 1.6;
+}
+
+#tos_prompt .agreement a {
+  color: #990000;
+  text-decoration: underline;
+}
+
+#tos_prompt .confirmation {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 1.2em 0;
+  font-size: 0.9em;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+#tos_prompt .confirmation input[type="checkbox"] {
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+#tos_prompt button#accept_tos {
+  background: #990000;
+  color: #fff;
+  border: 1px solid #730000;
+  padding: 12px 24px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  transition: background 0.2s ease, border-color 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#tos_prompt button#accept_tos:hover:not(:disabled) {
+  background: #b30000;
+  border-color: #990000;
+}
+
+#tos_prompt button#accept_tos:disabled {
+  background: #ccc;
+  border-color: #bbb;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* User Avatar Fallbacks in Comments */
+.comment-avatar-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #990000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: inset 0 -2px 4px rgba(0,0,0,0.15), 1px 1px 2px rgba(0,0,0,0.1);
+  text-shadow: 1px 1px 0 rgba(0,0,0,0.25);
+  font-family: Georgia, serif;
+}
+
+/* Micro-animations and Interactions */
+.comment {
+  animation: slideUpFade 0.4s ease-out;
+}
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Kudos Heartbeat Animation */
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  14% { transform: scale(1.15); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.15); }
+  70% { transform: scale(1); }
+}
+
+.kudosed-heartbeat {
+  animation: heartbeat 0.8s ease-in-out;
+}
+
+/* Kudos Feedback Message */
+.kudos-success {
+  background: #e6f4ea;
+  color: #137333;
+  border: 1px solid #c2e7c9;
+  padding: 12px;
+  border-radius: 4px;
+  margin: 15px 0;
+  font-weight: bold;
+  text-align: center;
+  animation: slideUpFade 0.3s ease-out;
+}
+
+/* Fixes for absolute URLs pointing to localhost skins */
+#header .primary {
+  background-image: none !important; /* Remove tiled background if missing */
+}
+
+/* Responsive & layout tweaks */
+#outer {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  margin-top: 10px;
+}
+@media (max-width: 42em) {
+  #outer {
+    margin-top: 0;
+    border-radius: 0;
+  }
+}
