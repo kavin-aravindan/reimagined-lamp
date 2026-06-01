@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-05-31T15:12:08.272Z",
-  "totalCount": 4,
+  "updatedAt": "2026-06-01T15:13:41.546Z",
+  "totalCount": 5,
   "tags": [
     "Aesthetics",
     "Canvas",
@@ -12,7 +12,8 @@
     "Markdown",
     "Neon",
     "Node.js",
-    "Widget"
+    "Widget",
+    "spcrc-wannabe"
   ],
   "submissions": [
     {
@@ -29,6 +30,18 @@
         "Compilers"
       ],
       "github": "hshankar08"
+    },
+    {
+      "folderName": "harshvardhan-pandey",
+      "path": "contributors/harshvardhan-pandey/index.html",
+      "hasIndex": true,
+      "author": "Harshvardhan Pandey",
+      "title": "Crippled Woman",
+      "description": "Have you started tax evasion yet?",
+      "tags": [
+        "spcrc-wannabe"
+      ],
+      "github": "harshvardhan-pandey"
     },
     {
       "folderName": "alex-rivera",
