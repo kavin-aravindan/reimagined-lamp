@@ -54,7 +54,7 @@ if (missingFields.length > 0) {
 }
 
 // Generate Target Folder Name
-const folderName = customFolderName || metadata.folder || slugify(metadata.title);
+const folderName = customFolderName || metadata.github.toLowerCase().trim();
 const targetDir = path.join(CONTRIBUTORS_DIR, folderName);
 
 if (fs.existsSync(targetDir)) {
@@ -96,7 +96,6 @@ templateHtml = templateHtml
   .replace(/<span class="read-time">.*?<\/span>/, `<span class="read-time"><i data-lucide="clock"></i> ${readTimeMins} min read</span>`)
   // Titles
   .replace(/<h1 class="post-title">.*?<\/h1>/, `<h1 class="post-title">${metadata.title}</h1>`)
-  .replace(/<p class="post-subtitle">.*?<\/p>/, `<p class="post-subtitle">${metadata.description}</p>`)
   // Cover Banner Text
   .replace(/<div class="cover-text">.*?<\/div>/, `<div class="cover-text">${metadata.title.toUpperCase().slice(0, 20)}...</div>`)
   // Author

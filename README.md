@@ -64,7 +64,7 @@ If you want to contribute a blog post or text article, you don't need to write H
    ```
 3. Run the generator script:
    ```bash
-   node create-blog.js my-post.md [custom-folder-name]
+   node create-blog.js my-post.md
    ```
 This script will parse your markdown, compile the body into semantic HTML, clone the blog stylesheet and interactive script assets, write the `metadata.json` registry file, create the folder inside `contributors/`, and automatically rebuild the showcase registry so your post shows up in the hub immediately!
 
