@@ -1,35 +1,20 @@
 {
-  "updatedAt": "2026-05-31T15:12:08.272Z",
-  "totalCount": 4,
+  "updatedAt": "2026-06-01T15:30:41.632Z",
+  "totalCount": 3,
   "tags": [
+    "AO3 Replica",
     "Aesthetics",
     "Canvas",
     "Clock",
-    "Compilers",
     "Creative Coding",
+    "Fanfiction",
     "Interactive",
-    "JavaScript",
-    "Markdown",
+    "Interactive UI",
+    "Jujutsu Kaisen",
     "Neon",
-    "Node.js",
     "Widget"
   ],
   "submissions": [
-    {
-      "folderName": "creating-markdown-parsers-in-nodejs",
-      "path": "contributors/creating-markdown-parsers-in-nodejs/index.html",
-      "hasIndex": true,
-      "author": "Hari Shankar",
-      "title": "Creating Markdown Parsers in Node.js",
-      "description": "A look at how to build a regex-based lightweight markdown compiler in vanilla JavaScript.",
-      "tags": [
-        "Node.js",
-        "Markdown",
-        "JavaScript",
-        "Compilers"
-      ],
-      "github": "hshankar08"
-    },
     {
       "folderName": "alex-rivera",
       "path": "contributors/alex-rivera/index.html",
@@ -46,18 +31,6 @@
       "github": "alexrivera"
     },
     {
-      "folderName": "hshankar08",
-      "path": "contributors/hshankar08/index.html",
-      "hasIndex": true,
-      "author": "Hari Shankar",
-      "title": "Doki Doki Waku Waku 3000",
-      "description": "Shut up. Baka.",
-      "tags": [
-        "Interactive"
-      ],
-      "github": "hshankar08"
-    },
-    {
       "folderName": "jane-doe",
       "path": "contributors/jane-doe/index.html",
       "hasIndex": true,
@@ -70,6 +43,21 @@
         "Creative Coding"
       ],
       "github": "janedoe"
+    },
+    {
+      "folderName": "harishankar08",
+      "path": "contributors/harishankar08/index.html",
+      "hasIndex": true,
+      "author": "Hari Shankar",
+      "title": "To Debate a Zenin (AO3 Replica)",
+      "description": "An Archive of Our Own (AO3) story page replication featuring the Jujutsu Kaisen fanfiction 'To Debate a Zenin'. Built with interactive Kudos, a Comments drawer, and responsive layouts.",
+      "tags": [
+        "AO3 Replica",
+        "Fanfiction",
+        "Interactive UI",
+        "Jujutsu Kaisen"
+      ],
+      "github": "HariShankar08"
     }
   ]
 }
